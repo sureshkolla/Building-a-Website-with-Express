@@ -1,0 +1,14 @@
+var express = require('express');
+var router = express.Router();
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('shop/index', { title: 'Shopping Cart' });
+});
+
+/* GET Cart page. */
+router.get('/cart', function(req, res, next) {
+  res.render('shop/cart', { title: 'Shopping Cart' });
+});
+
+module.exports = router;
